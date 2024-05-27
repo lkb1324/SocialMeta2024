@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="" />
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <title>Welcome to SocialMeta 2024</title>
+  <link rel="icon" type="image/png" href="/imgs/icon.png" />
+
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?439118d0d81eae9c9af1830e01281a52";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<div style="display: none"><img src="/img/thumbnail.png" alt="" /></div>
+
+<body>
+  <!--==================== header ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">SocialMeta2024</a>
+      <a href="" class="current" id="current">Home</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <!-- 1 -->
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i> Home
+            </a>
+          </li>
+          <!-- 2 -->
+          <li class="nav__item">
+            <a href="#callforpapers" class="nav__link active-link">
+              <i class="uil uil-megaphone nav__icon"></i> Call for papers
+            </a>
+          </li>
+
+          <!-- 3 -->
+          <li class="nav__item">
+            <a href="#keynote" class="nav__link active-link">
+              <i class="uil uil-keyhole-circle nav__icon"></i> Keynote
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#program" class="nav__link active-link">
+              <i class="uil uil-clock nav__icon"></i> Program
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#registration" class="nav__link active-link">
+              <i class="uil uil-clock nav__icon"></i> Registration
+            </a>
+          </li>
+          <!-- 5 -->
+          <li class="nav__item">
+            <a href="#submission" class="nav__link active-link">
+              <i class="uil uil-file-upload nav__icon"></i> Submission
+            </a>
+          </li>
+          <!-- 6 -->
+          <li class="nav__item">
+            <a href="#organizers" class="nav__link active-link">
+              <i class="uil uil-users-alt nav__icon"></i> Organizers
+            </a>
+          </li>
+          <!-- 7 -->
+          <li class="nav__item">
+            <a href="#history" class="nav__link active-link">
+              <i class="uil uil-history-alt nav__icon"></i> History
+            </a>
+          </li>
+
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <!-- Theme change bin -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=================== main ====================-->
+
+  <main class="main">
+    <!-- Home -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <!-- <div class="home__content grid">
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.024 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.24 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.024 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.24 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="home__blob-img"  href="./imgs/hk.jpg"/>
+                        </g>
+                    </svg>                    
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">SocialMeta 2024</h1>
+                    <p class="home__description">The 2nd International Workshop on Social and Metaverse Computing and Networking In conjunction with <a href="https://icdcs2024.icdcs.org/" class="ieee">IEEE ICDCS'24</a> </p>
+                    <p class="home__place"> Hong Kong </p>
+                    <p class="home__date">Some time</p>
+                </div>
+            </div>
+            <div class="home__scroll">
+                <a href="#callforpapers" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <span class="home__scroll-name">Scroll down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div> -->
+        <div class="home__data">
+          <h1 class="home__title">SocialMeta 2024</h1>
+          <p class="home__description">
+            The 2nd International Workshop on Social and Metaverse Computing
+            and Networking In conjunction with
+            <a href="https://icdcs2024.icdcs.org/" class="ieee">IEEE ICDCS'24</a>
+          </p>
+          <p class="home__date_place">July 18, 2024 / Hong Kong, China</p>
+          <p class="home__date_place">Venue: Sheraton Hong Kong Hotel & Towers</p>
+          <div class="submit-btn">
+            <a href="https://easychair.org/conferences/?conf=socialmeta2024"><span></span>SUBMIT NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="source">Image from iStock</div>
+    </section>
+
+
+    <!--=================== Call for papers ====================-->
+    <section class="callforpapers section" id="callforpapers">
+      <div class="callforpapers__container container grid">
+        <div class="callforpapers__data">
+          <p class="callforpapers__description">
+            While online social network services and applications have found
+            unprecedented presence today (e.g., messaging, gaming,
+            advertising, and recommendation), multiple novel and emerging
+            technologies have already started to shape the next-generation
+            online social networks, including the “metaverse”. On the one
+            hand, Augmented/Virtual Reality (AR/VR), Internet of Things (IoT),
+            and Multi-access Edge Computing (MEC) are bringing new mobile
+            computing and communication paradigms for provisioning and
+            accessing online social networks, social media, massive gaming,
+            etc. On the other hand, Artificial Intelligence (AI) and Machine
+            Learning (ML), characterized by recent breakthroughs of deep
+            learning and big data, are finding successful applications to
+            online social networks, including detecting/preventing spam,
+            fraud, and misinformation and enhancing service experience via
+            intelligent user interactions (e.g., recognition) with texts,
+            images, and voices. Yet, how to exploit and synergize all such
+            state-of-the-art technologies to revolutionize online social
+            networks is still in its infancy and demands comprehensive
+            investigation and research.
+          </p>
+          <p class="callforpapers__description">
+            The goal of the 2nd International Workshop on Social and Metaverse
+            Computing and Networking (SocialMeta) is to bring together
+            scientists, researchers, engineers, and practitioners to identify
+            new problems and discuss the latest research ideas and results,
+            especially those related to novel and emerging technologies,
+            regarding online social networks and the metaverse. SocialMeta
+            focuses on all aspects of online social networks and the
+            metaverse, including architecture, design, implementation,
+            measurement, modeling, algorithm, analysis, and theory. The topics
+            include but are not limited to the following:
+          </p>
+          <ul>
+            <li class="topic">
+              Mobile and location-based online social networks and the
+              AR/VR-based metaverse
+            </li>
+            <li class="topic">
+              Reputation, incentives, and economics in online social networks
+              and the metaverse
+            </li>
+            <li class="topic">
+              Security and privacy in online social networks and the metaverse
+            </li>
+            <li class="topic">
+              AR/VR, IoT, wearables, and crowdsourcing for online social
+              networks and the metaverse - Cloud, edge, SDN, and NFV for
+              online social networks and the metaverse
+            </li>
+            <li class="topic">
+              Non-terrestrial networks, UAV, and 5G/6G for online social
+              networks and the metaverse
+            </li>
+            <li class="topic">
+              AI/ML, data science, and blockchains for online social networks
+              and the metaverse
+            </li>
+            <li class="topic">
+              Measurement of online social network and metaverse systems and
+              applications
+            </li>
+            <li class="topic">
+              Modeling, algorithms, and theories for online social networks
+              and the metaverse
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span>
+        <hr />
+      </span>
+    </section>
+
+    <section class="logo">
+
+      <div class="logo-box">
+        <div class="logo-top">
+          <img class="top-img1" src="./imgs/logo-top-1.svg" alt="">
+          <img src="./imgs/logo-top-2.png" alt="">
+          <img src="./imgs/logo-top-3.png" alt="">
+        </div>
+
+
+        <div class="logo-list">
+          <div style="position: relative;">
+            <h3>SPONSERS</h3>
+            <img class="img1" src="./imgs/nav-list-1.svg" alt="">
+          </div>
+          <div><img class="img2" src="./imgs/nav-list-2.svg" alt=""></div>
+          <div><img class="img3" src="./imgs/nav-list-3.svg" alt=""></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <span>
+        <hr />
+      </span>
+    </section>
+    <!--=================== Keynote ====================-->
+    <section class="keynote section" id="keynote">
+      <div class="keynote_container container">
+        <div class="keynote_image">
+          <div class="keynote_image_wrap">
+            <img src="./imgs/keynote01.jpg" alt="" />
+            <p>Prof. Bu Zhong</p>
+          </div>
+        </div>
+        <div class="keynote_title">
+          <span>Keynote 1: </span>Exploring Online Social Networks: Synergizing Emerging Technologies with Social Science
+          Perspectives
+        </div>
+        <div class="keynote_abstract">
+          <span>Abstract: </span>Online social network services and applications have experienced unprecedented growth
+          and prevalence. The future of these networks is being shaped by emerging technologies such as
+          Augmented/Virtual Reality, Internet of Things, Multi-access Edge Computing, Artificial Intelligence, Machine
+          Learning and Metaverse techniques. Social scientists can contribute to the study of these technological
+          advances by examining their societal and human implications on online social networks. This includes
+          investigating their impact on social interactions, behavior, relationships, privacy, security, and ethical
+          concerns. Collaboration between social scientists and scholars in information and computing sciences is
+          encouraged to design and develop socially responsible online social network services and applications. The
+          joint efforts of these fields highlight the importance of incorporating concepts and methods from humanities
+          and social sciences to fully understand the impacts of digital technology on online social networks and
+          beyond.
+        </div>
+        <div class="keynote_bottom">
+          <span>Bio: </span>Dr. Bu Zhong is a Professor and Head of the Department of Interactive Media, School of
+          Communication at the Hong Kong Baptist University. He is also the Senior Editor of Computers in Human
+          Behavior. His research applies decision-making theories to the analysis of information processing and its
+          effects on behavior change, mental health, and social well-being. He explores human-technology interactions as
+          a complex adaptive system, in which the complexity of social systems, digital technology use, and behavior
+          change has been extensively scrutinized. His scholarly works demonstrate a deep commitment to comprehending
+          the intricate connections between interactive media, digital technology, and human communities.
+        </div>
+      </div>
+      <div class="keynote_container container">
+        <h3 class="keynote_container-h3"></h3>
+        <div class="keynote_image">
+          <div class="keynote_image_wrap">
+            <img src="./imgs/XueyanTang.jpg" alt="" />
+            <p>Dr. Xueyan Tang</p>
+          </div>
+        </div>
+        <div class="keynote_title">
+          <span>Keynote 2: </span>Influence Analysis and Estimation in Social
+          Advertising
+        </div>
+        <div class="keynote_abstract">
+          <span>Abstract: </span>Online social networks serve as important
+          media for users to gain information in the modern world. The
+          emergence of Metaverse further bridges the connectivity of social
+          media with mixed reality technologies to enrich the form and
+          experience of social networking. With the vast user population on
+          social media, plentiful social connections among users serve as
+          fertile soil for advertising campaigns as information can be
+          propagated efficiently and widely leveraging the word-of-mouth
+          effects. Influential users with large audiences over online social
+          networks are of great values to initiate marketing campaigns. In
+          this talk, we will present our work on influence analysis and
+          estimation in social advertising. We will discuss several
+          application scenarios, including pricing influential users based on
+          their potential influence spreads in an advertising campaign, and
+          analyzing their influence contributions given the advertising
+          campaign result.
+        </div>
+        <div class="keynote_bottom">
+          <span>Bio: </span>Xueyan Tang is an associate professor in the
+          School of Computer Science and Engineering at Nanyang Technological
+          University, Singapore. He received the BEng degree in computer
+          science and engineering from Shanghai Jiao Tong University, and the
+          PhD degree in computer science from the Hong Kong University of
+          Science and Technology. His research interests include distributed
+          systems, cloud computing, online social networks, mobile and
+          pervasive computing. He has served as an associate editor of IEEE
+          Transactions on Parallel and Distributed Systems, and a program
+          co-chair of IEEE ICPADS 2012, CloudCom 2014, and ICDCS 2020. He is
+          now serving as an associate editor of IEEE Transactions on Cloud
+          Computing.
+        </div>
+      </div>
+    </section>
+    <section>
+      <span>
+        <hr />
+      </span>
+    </section>
+    <!--=================== Program ====================-->
+    <section class="program section" id="program">
+      <div class=".program-wrapper container">
+        <div class="program-box">
+          <p class="program-time"><strong>Tuesday, July 18, 2024</strong></p>
+          <p><strong>Venue:</strong> Sheraton Hong Kong Hotel & Towers</p>
+          <p>All times listed in Hong Kong time</p>
+        </div>
+        <div class="program-box">
+          <strong class="program-time">8:45-9:10 Opening Session</strong>
+        </div>
+        <div class="program-box">
+          <p class="program-highlight"><strong>9:10-9:30 Keynote 1</strong></p>
+          <h4>Exploring Online Social Networks: Synergizing Emerging Technologies with Social Science Perspectives</h4>
+          <p>Prof. Bu Zhong (Hong Kong Baptist University)</p>
+        </div>
+        <div class="program-box">
+          <p class="program-highlight"><strong>9:30-10:30 Keynote 2</strong></p>
+          <h4>Influence Analysis and Estimation in Social Advertising</h4>
+          <p>Dr. Xueyan Tang (Nanyang Technological University)</p>
+        </div>
+        <div class="program-box">
+          <p class="program-highlight"><strong>10:30-11:10 Panel Discussion</strong></p>
+          <p><strong>The Role of Interdisciplinary Collaboration Between <i>Computer Science</i> and <i>Social Science</i> in Addressing Societal Challenges</strong></p>
+        </div>
+        
+        <div class="program-time">
+          <strong>
+            11:10-11:15 Break
+          </strong>
+        </div>
+
+        <div class="program-box">
+          <p><strong>11:15-12:15 Session 1</strong></p>
+          <p>Session Chair: Dr. Shuai Wang</p>
+          <strong class="program-title">Network Traffic in the Metaverse: The Case of Social VR</strong>
+          <p>Ahmad Alhilal (Hong Kong University of Science and Technology), Kirill Shatilov (Hong Kong University of
+            Science and Technology), Gareth Tyson (Hong Kong University of Science and Technology), Tristan Braud (Hong
+            Kong University of Science and Technology) and Pan Hui (Hong Kong University of Science and Technology
+            (Guangzhou))</p>
+          <strong class="program-title">The Future of Work: Do We Need Interactive and Collaborative Offices? The Most
+            Interesting Survey in a Post-Covid World</strong>
+          <p>Zhuo Huang, Hanjing Wang and Xinrui Shi (Hong Kong Baptist University)</p>
+          <strong class="program-title">Learning-based Incentive Mechanism for Task Freshness-aware Vehicular Twin
+            Migration
+          </strong>
+          <p>Junhong Zhang (Guangdong University of Technology), Jiangtian Nie (Nanyang Technological University), Jinbo
+            Wen (Guangdong University of Technology), Jiawen Kang (Guangdong University of Technology), Minrui Xu
+            (Nanyang Technological University), Xiaofeng Luo (Guangdong University of Technology) and Dusit Niyato
+            (Nanyang Technological University)</p>
+        </div>
+        <div>
+          <strong class="program-time">12:15-14:00 Lunch Break</strong>
+        </div>
+        <div class="program-box">
+          <p><strong>14:00-15:00 Session 2</strong></p>
+          <p>Session Chair: Dr. Jingpu Duan</p>
+          <strong class="program-title">iCOIL: Scenario Aware Autonomous Parking Via Integrated Constrained Optimization
+            and Imitation Learning</strong>
+          <p>Lexiong Huang (SIAT, Chinese Academy of Sciences), Ruihua Han (University of Hong Kong), Guoliang Li (SIAT,
+            Chinese Academy of Sciences), He Li (University of Macau), Shuai Wang (SIAT, Chinese Academy of Sciences),
+            Yang Wang (SIAT, Chinese Academy of Sciences) and Chengzhong Xu (University of Macau)</p>
+          <strong class="program-title">Emulating High-performance Networks with CNNet</strong>
+          <p>Yang Peng (Southern University of Science and Technology), Yupeng Xiao (Southern University of Science and
+            Technology), Jingpu Duan (Pengcheng Laboratory), Xiaoxi Zhang (Sun Yat-sen University) and Weichao Li
+            (Pengcheng Laboratory)</p>
+          <strong class="program-title">The Metaverse: Exploring the Convergence of Technologies and Social
+            Dynamics</strong>
+          <p>Chao Wu and Yujia Li (Zhejiang University)</p>
+        </div>
+        <div class="program-time">
+          <strong>
+            15:00-15:15 Break
+          </strong>
+        </div>
+        <div class="program-box">
+          <p><strong>15:15-15:55 Session 3</strong></p>
+          <p>Session Chair: Mr. Yifeng Luo</p>
+          <strong class="program-title">Empowering the Metaverse with Generative AI: Survey and Future
+            Directions</strong>
+          <p>Hua Xuan Qin and Pan Hui (Hong Kong University of Science and Technology (Guangzhou))</p>
+          <strong class="program-title">Embedding the Social Value in Algorithmic Innovation and Companies
+            Competitiveness: Evidence from the
+            Food-delivery Platforms in China</strong>
+          <p>Liwei Chen (Fudan University), Xin Gao (Tsinghua University), Jingjing Qu (Shanghai AI Lab) and Lin Tang
+            (Shanghai Jiao Tong University)</p>
+        </div>
+        <div class="program-box">
+          <strong class="program-time">15:55-16:00 Closing Remarks</strong>
+        </div>
+      </div>
+    </section>
+    <section>
+      <span>
+        <hr>
+      </span>
+    </section>
+    <!--=================== registration ====================-->
+
+    <section class="registration section" id="registration">
+      <div class="registration-wrapper container">
+        <strong>Registration </strong>
+        <ul class="registration-ul">
+          <li class="topic">
+            <p>Please use the following link to register for SocialMeta'24:
+              <a href="https://cvent.me/rkR59E">https://cvent.me/rkR59E</a>
+            </p>
+          </li>
+          <li class="topic">
+            <p>About the registration fee, please refer to ICDCS webpage:
+              <a href="https://icdcs2024.icdcs.org/registration/">https://icdcs2024.icdcs.org/registration/</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section>
+      <span>
+        <hr>
+      </span>
+    </section>
+    <!--=================== Submission ====================-->
+    <section class="submission section" id="submission">
+      <div class="submission__container container">
+        <h1 class="section__title">Important Dates</h1>
+        <div class="submission__sections">
+          <!-- 1 -->
+          <div class="submission__date">
+            <div>
+              <h3 class="submission__title">Submission deadline</h3>
+              <div class="submission__calendar">
+                <p>
+                  <i class="uil uil-calendar-alt"></i>
+                  <span class="submission_decretion">February 28, 2024</span>
+                </p>
+                <i class="uil uil-calendar-alt"></i>
+                <span class="submission_new">March 18, 2024 (AoE)</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="submission__rounder"></span>
+              <span class="submission__line"></span>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="submission__date">
+            <div></div>
+            <div>
+              <span class="submission__rounder"></span>
+              <span class="submission__line"></span>
+            </div>
+            <div>
+              <h3 class="submission__title">Notification due</h3>
+              <div class="submission__calendar">
+                <p>
+                  <i class="uil uil-calendar-alt"></i>
+                  <span class="submission_decretion">April 10, 2024</span>
+                </p>
+                <i class="uil uil-calendar-alt"></i>
+                <span class="submission_new">April 17, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="submission__date">
+            <div>
+              <h3 class="submission__title">Camera-ready paper due</h3>
+              <div class="submission__calendar">
+                <p>
+                  <i class="uil uil-calendar-alt"></i>
+                  <span class="submission_decretion">May 8, 2024</span>
+                </p>
+                <i class="uil uil-calendar-alt"></i>
+                <span class="submission_new">End of May</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="submission__rounder"></span>
+              <span class="submission__line"></span>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="submission__date">
+            <div></div>
+
+            <div>
+              <span class="submission__rounder"></span>
+              <!-- <span class="submission__line"></span> -->
+            </div>
+            <div>
+              <h3 class="submission__title">Workshop</h3>
+              <div class="submission__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                July 18, 2024
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit2-btn">
+          <a href="https://easychair.org/conferences/?conf=socialmeta2024"><span></span>SUBMIT NOW</a>
+        </div>
+
+        <span class="section__subtitle"></span>
+        <p class="submission_description">
+          Authors are encouraged to submit papers describing original and
+          unpublished research, not currently under review in other venues,
+          addressing state-of-the-art research and development in all aspects
+          of mobile computing, online social networks, or the intersection of
+          both. In particular, innovative, early-stage ideas and preliminary
+          results are welcome. The length of the paper must be no more than 6
+          pages in the IEEE double-column format, including references. The
+          first page must contain an abstract, the name(s) and affiliation(s)
+          of the author(s). Each submission will receive at least three
+          independent, blind peer reviews from the program committee. At least
+          one of the authors of every accepted paper must register and present
+          the paper at the workshop.
+        </p>
+        <br>
+        <div class="submission_description">
+          The program committee will select one paper for the
+          <span>Best Paper Award</span> and one paper for the <span>Best Student Paper Award</span>. Selected papers will be
+          <span>recommended to the Journal of Social Computing (JSC) </span>published by IEEE and Tsinghua University
+          Press.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span>
+        <hr />
+      </span>
+    </section>
+
+    <!--=================== Organizers ====================-->
+    <section class="organziers section" id="organizers">
+      <!-- <h1 class="section__title">Organizers</h1> -->
+      <div class="organizers__container container grid">
+        <div class="organizers__data">
+          <h3 class="S-chairs">Steering Committee:</h3>
+          <ul>
+            <li class="chairname">
+              Xiaoming Fu (Georg-August-Universität Göttingen, Germany)
+            </li>
+            <li class="chairname">
+              Pan Hui (The Hong Kong University of Science and Technology,
+              Hong Kong)
+            </li>
+            <li class="chairname">
+              Vassilis Kostakos (University of Melbourne, Australia)
+            </li>
+            <li class="chairname">
+              Jörg Ott (Technical University of Munich, Germany)
+            </li>
+            <li class="chairname">
+              Antonia Tulino (New York University, USA; University of Naples
+              Federico II, Italy)
+            </li>
+            <li class="chairname">
+              Sasu Tarkoma (University of Helsinki, Finland)
+            </li>
+          </ul>
+
+          <h3 class="G-chairs">General Chairs:</h3>
+
+          <!-- <div class="chairs"> -->
+          <!-- <div class="chair">
+                    <img src="imgs/yangc.png">
+                    <p class="chair-dis">Yang Chen</p>
+                    <p class="chair-dis">Fudan University, China</p>
+                </div>
+                
+                <div class="chair">
+                    <img src="imgs/lei.png">
+                    <p class="chair-dis">Lei Jiao</p>
+                    <p class="chair-dis">University of Oregon, USA</p>
+                </div>  -->
+          <ul>
+            <li class="chairname">Yang Chen (Fudan University, China)</li>
+            <li class="chairname">Lei Jiao (University of Oregon, USA)</li>
+          </ul>
+
+          <!-- </div> -->
+
+          <h3 class="T-chairs">TPC Chairs:</h3>
+
+          <!-- <div class="chairs">
+                <div class="chair">
+                    <img src="imgs/yupeng.png">
+                    <p class="chair-dis">Yupeng Li</p>
+                    <p class="chair-dis">Hong Kong Baptist University, Hong Kong</p>
+                </div>
+                
+                <div class="chair">
+                    <img src="imgs/zehui.png">
+                    <p class="chair-dis">Zehui Xiong</p>
+                    <p class="chair-dis">Singapore University of Technology and Design, Singapore</p>
+                </div>  -->
+
+          <ul>
+            <li class="chairname">
+              Yupeng Li (Hong Kong Baptist University, Hong Kong)
+            </li>
+            <li class="chairname">
+              Zehui Xiong (Singapore University of Technology and Design,
+              Singapore)
+            </li>
+          </ul>
+
+          <h3 class="TPC">TPC Members:</h3>
+          <ul>
+            <li class="chairname">
+              Felix Beierle (University of Würzburg, Germany)
+            </li>
+            <li class="chairname">
+              Wei Cai (The Chinese University of Hong Kong, Shenzhen, China)
+            </li>
+            <li class="chairname">
+              Junyang Chen (Shenzhen University, China)
+            </li>
+            <li class="chairname">
+              Shenghui Cheng (WestLake University, China)
+            </li>
+            <li class="chairname">Mingzhe Chen (University of Miami, USA)</li>
+            <li class="chairname">
+              Dimitrios Chatzopoulos (University College Dublin, Ireland)
+            </li>
+            <li class="chairname">
+              Hong-Ning Dai (Hong Kong Baptist University, Hong Kong)
+            </li>
+            <li class="chairname">
+              Jingpu Duan (Peng Cheng Laboratory, Shenzhen, China)
+            </li>
+            <li class="chairname">
+              Qingyuan Gong (Fudan University, China)
+            </li>
+            <li class="chairname">
+              Jianxiong Guo (Beijing Normal University, China)</li>
+            <li class="chairname">
+              Zehua Guo (Beijing Institute of Technology, China)
+            </li>
+            <li class="chairname">
+              Kai Han (The University of Hong Kong, Hong Kong)
+            </li>
+            <li class="chairname">Zhenhua Han (Microsoft Research Asia)</li>
+            <li class="chairname">
+              Huawei Huang (Sun Yat-sen University, China)
+            </li>
+            <li class="chairname">
+              Yidan Hu (Rochester Institute of Technology, USA)
+            </li>
+            <li class="chairname">
+              Jingkun Hu (Worldmoney Blockchain Management Co., Limited, Hong Kong)
+            </li>
+            <li class="chairname">
+              Zhicong Lu (City Unversity of Hong Kong, Hong Kong)
+            </li>
+            <li class="chairname">
+              Lik-Hang Lee (The Hong Kong Polytechnic University, Hong Kong)
+            </li>
+            <li class="chairname">
+              Bin Li (The Pennsylvania State University, USA)
+            </li>
+            <li class="chairname">
+              Feng Liang (Shenzhen MSU-BIT University, China)
+            </li>
+            <li class="chairname">
+              Li Liu (The Hong Kong University of Science and Technology
+              (Guangzhou), China)
+            </li>
+            <li class="chairname">
+              Xiaofan Liu (City Unversity of Hong Kong, Hong Kong)
+            </li>
+            <li class="chairname">
+              Xuan Ning (BNU-HKBU United International College, China)
+            </li>
+            <li class="chairname">
+              Kai Shu (Illinois Institute of Technology, USA)
+            </li>
+            <li class="chairname">
+              Xiang Su (Norwegian University of Science and Technology,
+              Norway)
+            </li>
+            <li class="chairname">
+              Xueyan Tang (National University of Singapore, Singapore)
+            </li>
+            <li class="chairname">
+              Haisheng Tan (University of Science and Technology of China,
+              China)
+            </li>
+            <li class="chairname">
+              Guangmo Tong (University of Delaware, USA)
+            </li>
+            <li class="chairname">
+              Yanlin Wang (Sun Yat-sen University, China)
+            </li>
+            <li class="chairname">
+              Shuai Wang (SIAT, Chinese Academy of Sciences, China)
+            </li>
+            <li class="chairname">
+              Shiqiang Wang (IBM T. J. Watson Research Center, USA)
+            </li>
+            <li class="chairname">
+              Cheng-Jun Wang (Nanjing University, China)
+            </li>
+            <li class="chairname">
+              Xiaohui Wang (City Unversity of Hong Kong, Hong Kong)
+            </li>
+            <li class="chairname">Chao Wu (Zhejiang University, China)</li>
+            <li class="chairname">Shuai Xu (Nanjing University of Aeronautics and Astronautics, China)
+            </li>
+            <li class="chairname">
+              Haoran Yu (Beijing Institute of Technology, China)
+            </li>
+            <li class="chairname">
+              Min Yang (SIAT, Chinese Academy of Sciences, China)
+            </li>
+            <li class="chairname">Yali Yuan (Southeast University, China)</li>
+            <li class="chairname">
+              Eiko Yoneki (University of Cambridge, UK)
+            </li>
+            <li class="chairname">
+              Yang Zhang (CISPA Helmholtz Center for Information Security,
+              Germany)
+            </li>
+            <li class="chairname">
+              Pengyuan Zhou (University of Science and Technology of China,
+              China)
+            </li>
+            <li class="chairname">Yifei Zou (Shandong University, China)</li>
+            <li class="chairname">
+              Yong Zhang (SIAT, Chinese Academy of Sciences, China)
+            </li>
+            <li class="chairname">
+              Xiaoxi Zhang (Sun Yat-sen University, China)
+            </li>
+          </ul>
+
+          <!-- <h3 class="TPC">TPC Members:</h3>
+            <ul>
+                <li class="chairname">Haoran Yu (Beijing Institute of Technology)</li>
+                <li class="chairname">Guangmo Tong (University of Delaware)</li>
+                <li class="chairname">Min Yang (SIAT, Chinese Academy of Sciences)</li>
+                <li class="chairname">Wei Cai (Chinese University of Hong Kong, Shenzhen)</li>
+                <li class="chairname">Yali Yuan (Southeast University)</li>
+                <li class="chairname">Kai Han (The University of Hong Kong)</li>
+                <li class="chairname">Yanlin Wang (Sun Yat-sen University)</li>
+                <li class="chairname">Junyang Chen (Shenzhen University)</li>
+                <li class="chairname">Tang Xueyan (National University of Singapore)</li>
+                <li class="chairname">Yidan Hu (Rochester Institute of Technology)</li>
+                <li class="chairname">Zhicong Lu (City Unversity of Hong Kong)</li>
+                <li class="chairname">Dimitrios Chatzopoulos (University College Dublin, Ireland)</li>
+                <li class="chairname">Lik-Hang Lee (Korea Advanced Institute of Science and Technology, Korea)</li>
+                <li class="chairname">Bin Li (The Pennsylvania State University, USA)</li>
+                <li class="chairname">Shiqiang Wang (IBM T. J. Watson Research Center, USA)</li>
+                <li class="chairname">Eiko Yoneki (University of Cambridge, UK)</li>
+                <li class="chairname">Yang Zhang (CISPA Helmholtz Center for Information Security, Germany)</li>
+                <li class="chairname">Pengyuan Zhou (University of Science and Technology of China, China)</li>
+            </ul> -->
+
+          <!-- <ul>
+                <li class="chairname">Yupeng Li (Hong Kong Baptist University, Hong Kong)</li>
+                <li class="chairname">Zehui Xiong (Singapore University of Technology and Design, Singapore)</li>
+            </ul> -->
+
+          <h3 class="W-chairs">Web Chair:</h3>
+          <ul>
+            <li class="chairname">
+              Yifeng Luo (Hong Kong Baptist University, Hong Kong)
+            </li>
+          </ul>
+
+          <h3 class="W-chairs">Publicity Chair:</h3>
+          <ul>
+            <li class="chairname">
+              Dacheng Wen (The University of Hong Kong, Hong Kong)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span>
+        <hr />
+      </span>
+    </section>
+
+    <!--=================== History ====================-->
+    <section class="history section" id="history">
+      <!-- <h1 class="section__title">History</h1> -->
+      <div class="history__container container grid">
+        <div class="history__data">
+          <p class="history__description">
+            SocialMeta is in fact a successor of our previous workshop series,
+            HotPOST, which refers to "Hot Topics in Pervasive Mobile and
+            Online Social Networking". HotPOST has been held annually in
+            2009-2020, which was in conjunction with ACM MobiHoc and IEEE
+            ICDCS in 2012-2017 and with IEEE INFOCOM in 2018-2020.
+          </p>
+
+          <ul class="history__list">
+            <li class="history">
+              <a href="https://socialmeta22.mystrikingly.com/" class="ieee">SocialMeta'22</a>, co-located with IEEE
+              ICDCS'22
+            </li>
+            <li class="history">
+              <a href="https://infocom2020.ieee-infocom.org/workshop-pervasive-mobile-and-online-social-networking"
+                class="ieee">HotPOST'20</a>, co-located with IEEE INFOCOM'20
+            </li>
+            <li class="history">
+              <a href="http://hotsalsa2019.edgecomp.org/" class="ieee">HotSALSA'19</a>, co-located with IEEE INFOCOM'19
+            </li>
+            <li class="history">
+              <a href="http://hotpost18.weebly.com/" class="ieee">HotPOST'18</a>, co-located with IEEE INFOCOM'18
+            </li>
+            <li class="history">
+              <a href="https://hotpost17.weebly.com/" class="ieee">HotPOST'17</a>, co-located with IEEE ICDCS'17
+            </li>
+            <li class="history">
+              <a href="http://hotpost16.weebly.com/" class="ieee">HotPOST'16</a>, co-located with ACM MobiHoc'16
+            </li>
+            <li class="history">
+              <a href="http://hotpost15.weebly.com/" class="ieee">HotPOST'15</a>, co-located with ACM MobiHoc'15
+            </li>
+            <li class="history">
+              <a href="http://hotpost14.realmv6.org/" class="ieee">HotPOST'14</a>, co-located with IEEE ICDCS'14
+            </li>
+            <li class="history">
+              <a href="https://user.informatik.uni-goettingen.de/~ychen/HotPOST13/" class="ieee">HotPOST'13</a>,
+              co-located with IEEE ICDCS'13
+            </li>
+            <li class="history">
+              <a href="https://user.informatik.uni-goettingen.de/~ychen/HotPOST12/" class="ieee">HotPOST'12</a>,
+              co-located with IEEE ICDCS'12
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span>
+        <hr />
+      </span>
+    </section>
+
+
+
+
+
+    <!-- <section>
+        <span>
+            <hr>
+        </span>
+    </section> -->
+
+    <!--=================== Program ====================-->
+
+    <!-- <section class="program section" id="program"> -->
+    <!-- <h1 class="section__title">Program</h1> -->
+    <!-- <div class="program__container container grid"> -->
+    <!-- <div class="program__data"> -->
+    <!-- <h1>Coming soon...</h1> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- <section> -->
+    <!-- <span> -->
+    <!-- <hr> -->
+    <!-- </span> -->
+    <!-- </section> -->
+
+    <!--=================== Keynote ====================-->
+    <!-- <section class="keynote section" id="keynote">124</section> -->
+  </main>
+  <!-- <h1 class="section__title">Keynote</h1> -->
+  <!-- <div class="keynote__container container grid">
+            <div class="keynote__data">
+                <h1>Coming soon...</h1>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <p class="footer__copy">
+            &#169; SocialMeta 2024 Organizing Committee
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 弹出框 -->
+  <div class="PopUp" id="PopUp" style="display: none">
+    <div class="PopUp_wrap">
+      Coming Soon
+      <img src="./imgs/close.png" alt="" class="PopUp_close" onclick="PopUp_close()" />
+    </div>
+  </div>
+
+  <!-- scroll top -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!--==================== swiper js ====================-->
+  <script src=""></script>
+
+  <!--==================== main js ====================-->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
